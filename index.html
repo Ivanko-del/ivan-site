@@ -6,6 +6,7 @@
   <title>IVAN — Сайти під замовлення</title>
   <link rel="icon" type="image/png" href="logo.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
@@ -15,7 +16,7 @@
 <body class="bg-black text-white">
 
   <!-- Шапка -->
-  <header class="flex items-center justify-between p-6 border-b border-gray-700">
+  <header class="flex items-center justify-between p-6 border-b border-gray-700" data-aos="fade-down">
     <div class="flex items-center">
       <img src="logo.png" alt="Логотип" class="h-10 mr-4" />
       <h1 class="text-2xl font-bold text-blue-500 tracking-wider">IVAN</h1>
@@ -27,25 +28,25 @@
   </header>
 
   <!-- Головна секція -->
-  <section class="text-center py-24 px-6">
+  <section class="text-center py-24 px-6" data-aos="zoom-in">
     <h2 class="text-5xl font-bold mb-4 text-blue-400 animate-pulse">Замов сайт — як для себе</h2>
     <p class="text-lg text-gray-300 mb-8">Створюю брутальні, функціональні та унікальні сайти. Швидко. Без багів. З душею.</p>
     <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded transition">Замовити зараз</a>
   </section>
 
   <!-- Портфоліо -->
-  <section id="portfolio" class="px-6 py-20 bg-gray-900">
+  <section id="portfolio" class="px-6 py-20 bg-gray-900" data-aos="fade-up">
     <h3 class="text-3xl font-semibold mb-8 text-center text-blue-400">Моє портфоліо</h3>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition">
+      <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition" data-aos="flip-left">
         <h4 class="text-xl font-bold mb-2 text-blue-300">Брутальний лендінг</h4>
         <p class="text-gray-300">Сайт для особистого бренду з анімацією, стилем і швидким завантаженням.</p>
       </div>
-      <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition">
+      <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition" data-aos="flip-left" data-aos-delay="100">
         <h4 class="text-xl font-bold mb-2 text-blue-300">Магазин електроніки</h4>
         <p class="text-gray-300">Продуманий інтернет-магазин з кошиком, фільтрами та адаптивністю.</p>
       </div>
-      <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition">
+      <div class="bg-gray-800 p-4 rounded-lg hover:scale-105 transition" data-aos="flip-left" data-aos-delay="200">
         <h4 class="text-xl font-bold mb-2 text-blue-300">Сервіс-платформа</h4>
         <p class="text-gray-300">Платформа для бронювань, форм і кабінетів з нуля під клієнта.</p>
       </div>
@@ -53,9 +54,9 @@
   </section>
 
   <!-- Контакти -->
-  <section id="contact" class="px-6 py-20 text-center bg-black">
+  <section id="contact" class="px-6 py-20 text-center bg-black" data-aos="fade-up">
     <h3 class="text-3xl font-semibold mb-8 text-blue-400">Звʼязатися зі мною</h3>
-    <form action="https://formsubmit.co/ivankolodeev2@gmail.com" method="POST" class="max-w-md mx-auto space-y-4">
+    <form action="https://formsubmit.co/ivankolodeev2@gmail.com" method="POST" class="max-w-md mx-auto space-y-4" data-aos="fade-up" data-aos-delay="200">
       <input type="hidden" name="_next" value="thankyou.html" />
       <input type="text" name="name" placeholder="Твоє імʼя" required class="w-full px-4 py-2 rounded bg-gray-800 text-white" />
       <input type="email" name="email" placeholder="Твій email" required class="w-full px-4 py-2 rounded bg-gray-800 text-white" />
@@ -63,16 +64,24 @@
       <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded transition w-full">Надіслати</button>
     </form>
 
-    <div class="mt-10 text-gray-400">
+    <div class="mt-10 text-gray-400" data-aos="fade-in" data-aos-delay="300">
       <p>Telegram: <a href="https://t.me/Eri174" class="text-blue-400">@Eri174</a></p>
       <p>Телефон: <a href="tel:+380976875960" class="text-blue-400">+380976875960</a></p>
     </div>
   </section>
 
   <!-- Футер -->
-  <footer class="text-center py-6 text-gray-600 text-sm border-t border-gray-800">
-    © 2025 IVAN  Усі права захищені.
+  <footer class="text-center py-6 text-gray-600 text-sm border-t border-gray-800" data-aos="fade-in">
+    © 2025 IVAN. Усі права захищені.
   </footer>
 
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
 </html>
